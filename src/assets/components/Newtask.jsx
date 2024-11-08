@@ -1,5 +1,6 @@
+import toast, { Toaster } from 'react-hot-toast';
 const Newstask = () => {
-    
+    const homeTaskAdded = () => toast.success('টাস্ক যুক্ত করা হয়েছে');
     return(
         <section className="timebox">
             <div className="container mx-auto w-11/12">
@@ -12,7 +13,7 @@ const Newstask = () => {
                                 <option value=""> প্রয়োজনীয় </option>
                                 <option value=""> অপ্রয়োজনীয় </option>
                             </select>
-                            <input type="submit" value="যুক্ত করুন" className="bg-lime-600 rounded-md text-white font-bold" />
+                            <input type="submit" value="যুক্ত করুন" className="bg-lime-600 rounded-md text-white font-bold" onClick={homeTaskAdded} />
                         </form>
                         
                     </div>

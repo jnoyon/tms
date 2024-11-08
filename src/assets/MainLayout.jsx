@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import toast, { Toaster } from 'react-hot-toast';
 const MainLayout = () => {
 
     return(
-        <section className="bg-gradient-to-r from-indigo-100 via-purple-200 to-pink-100">
+        <section>
+            <Toaster />
         <Header></Header>
         <Outlet></Outlet>
         <Footer></Footer>

@@ -12,3 +12,7 @@ body {
 .bottom-nav {
     padding: 10px 5px;
 }
+.bottom-nav svg {
+    margin: auto;
+    font-size: 18px;
+}

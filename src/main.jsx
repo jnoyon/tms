@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './assets/Home/Home.jsx';
 import MainLayout from './assets/MainLayout.jsx';
+import Timedistribute from './assets/Timedistribute/Timedistribute.jsx';
+import Task from './assets/Task/Task.jsx';
 
 
 
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/timebox',
-        element: <h1>time</h1>
+        element: <Timedistribute />
+      },
+      {
+        path: '/task',
+        element: <Task />
       }
     ]
   },
